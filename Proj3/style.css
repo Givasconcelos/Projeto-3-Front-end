@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis, sans-serif';
+}
+.hero{
+    width: 80%;
+    margin: auto;
+}
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    float: left;
+    max-width: 400px;
+    max-height: 250px;
+    margin-top: -80px;
+    margin-left: -63px;
+}
+ul{
+    flex: 1;
+    text-align: right;
+    margin-top: -90px;
+    left: 20px;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    
+   
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-family: Verdana;
+    position: relative;
+   
+}
+ul li a::after{
+content: '';
+width: 0%;
+height: 10px;
+background: #f14a60;
+position: absolute;
+left: 50%;
+transform: translate(-50%);
+top: -58px;
+transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.navbar-icons img{
+    height: 25px;
+    margin-left: 40px;
+    margin-right: -10px;
+   cursor: pointer;
+   margin-bottom: 85px;
+}
+.navbar-icons{
+    margin-left: 80px;
+}
+.banner{
+    display: flex;
+    margin-top: 80px;
+}
+.left-columnn,.right-column{
+flex-basis: 50%;
+}
+.right-column img{
+width: 100%;
+margin-left: 120px;
+margin-top: -80px;
+}
+.search-box{
+    display: flex;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+    margin-top: -55px;
+}
+.search-box img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+
+}
+.search-box input{
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+.left-column h1{
+    font-size: 90px;
+}
+.left-column h3{
+    font-size: 30px;
+}
+span{
+    color: #f14a60;
+}
+.left-column p{
+    font-size: 17px;
+    color: #999;
+    margin: 50px 0;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+    border-radius: 20px;
+}
+.btn .primary-btn{
+    background: linear-gradient(#fb7381,#f14a60);
+    box-shadow: 0 2px 15px rgba(248,38,103,0.26);
+    color: #fff;
+}
+.btn{
+    margin-bottom: 60px;
+}
+.social-icons{
+    width: 220px;
+    text-align: center;
+    opacity: .4;
+    position: relative;
+    margin-left: 160px;
+}
+.social-icons img{
+    height: 20px;
+    margin: 0 14px;
+}
+.social-icons::after{
+    content: '';
+    width: 164px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 10px;
+}
